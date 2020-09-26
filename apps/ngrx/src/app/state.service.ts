@@ -14,6 +14,7 @@ import { selectClosed, selectOpen, selectTodos } from './store/todo.selectors';
   providedIn: 'root',
 })
 export class StateService extends BaseStateService {
+  // TODO remove and complete does not work --> throws error
   add(item: Todo) {
     this.store.dispatch(add(item));
   }
