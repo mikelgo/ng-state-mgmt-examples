@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { NgxsModule } from '@ngxs/store';
 import { environment } from '../environments/environment';
+import { SharedModule } from '@ng-state-mgmt-examples/shared';
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,7 +14,8 @@ import { environment } from '../environments/environment';
     RouterModule.forRoot([], { initialNavigation: 'enabled' }),
     NgxsModule.forRoot([], {
       developmentMode: !environment.production
-    })
+    }),
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent],
