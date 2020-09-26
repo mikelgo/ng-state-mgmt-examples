@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { DataService, Todo } from '@ng-state-mgmt-examples/shared';
+import { BaseStateService, DataService, IStateService, Todo } from '@ng-state-mgmt-examples/shared';
 import {
   concatAll,
   filter,
@@ -14,7 +14,7 @@ import {
 @Injectable({
   providedIn: 'root',
 })
-export class StateService {
+export class StateService extends BaseStateService{
   private stateSubject = new BehaviorSubject<Todo[]>([]);
   public todos$: Observable<Todo[]> = this.dataService.fetchTodos().pipe(
     tap((todos) => this.stateSubject.next(todos)),
@@ -53,5 +53,7 @@ export class StateService {
     this.stateSubject.next(currrentState);
   }
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService) {
+    super();
+  }
 }
