@@ -35,6 +35,7 @@ export class TodoStateService {
   }
   @Action(CompleteTodo)
   complete(ctx: StateContext<TodoStateModel>, action: CompleteTodo) {
+    // something is not correct
     const state = ctx.getState();
     const updatedState = { ...state };
     updatedState.todos.map((todo) =>

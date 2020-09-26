@@ -44,6 +44,7 @@ export class StateService extends BaseStateService {
   }
 
   complete(item: Todo) {
+    console.log('complete')
     this.store.dispatch(new CompleteTodo(item));
   }
 
