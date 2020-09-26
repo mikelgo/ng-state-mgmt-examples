@@ -21,8 +21,13 @@
             "polyfills": "apps/ngrx/src/polyfills.ts",
             "tsConfig": "apps/ngrx/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/ngrx/src/favicon.ico", "apps/ngrx/src/assets"],
-            "styles": ["apps/ngrx/src/styles.scss"],
+            "assets": [
+              "apps/ngrx/src/favicon.ico",
+              "apps/ngrx/src/assets"
+            ],
+            "styles": [
+              "apps/ngrx/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -80,7 +85,10 @@
               "apps/ngrx/tsconfig.app.json",
               "apps/ngrx/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/ngrx/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ngrx/**/*"
+            ]
           }
         },
         "test": {
@@ -113,8 +121,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/ngrx-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/ngrx-e2e/**/*"]
+            "tsConfig": [
+              "apps/ngrx-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ngrx-e2e/**/*"
+            ]
           }
         }
       }
@@ -139,8 +152,13 @@
             "polyfills": "apps/ngxs/src/polyfills.ts",
             "tsConfig": "apps/ngxs/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/ngxs/src/favicon.ico", "apps/ngxs/src/assets"],
-            "styles": ["apps/ngxs/src/styles.scss"],
+            "assets": [
+              "apps/ngxs/src/favicon.ico",
+              "apps/ngxs/src/assets"
+            ],
+            "styles": [
+              "apps/ngxs/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -198,7 +216,10 @@
               "apps/ngxs/tsconfig.app.json",
               "apps/ngxs/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/ngxs/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ngxs/**/*"
+            ]
           }
         },
         "test": {
@@ -231,8 +252,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/ngxs-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/ngxs-e2e/**/*"]
+            "tsConfig": [
+              "apps/ngxs-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ngxs-e2e/**/*"
+            ]
           }
         }
       }
@@ -257,8 +283,13 @@
             "polyfills": "apps/akita/src/polyfills.ts",
             "tsConfig": "apps/akita/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/akita/src/favicon.ico", "apps/akita/src/assets"],
-            "styles": ["apps/akita/src/styles.scss"],
+            "assets": [
+              "apps/akita/src/favicon.ico",
+              "apps/akita/src/assets"
+            ],
+            "styles": [
+              "apps/akita/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -316,7 +347,10 @@
               "apps/akita/tsconfig.app.json",
               "apps/akita/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/akita/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/akita/**/*"
+            ]
           }
         },
         "test": {
@@ -349,8 +383,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/akita-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/akita-e2e/**/*"]
+            "tsConfig": [
+              "apps/akita-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/akita-e2e/**/*"
+            ]
           }
         }
       }
@@ -375,8 +414,13 @@
             "polyfills": "apps/rxjs/src/polyfills.ts",
             "tsConfig": "apps/rxjs/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/rxjs/src/favicon.ico", "apps/rxjs/src/assets"],
-            "styles": ["apps/rxjs/src/styles.scss"],
+            "assets": [
+              "apps/rxjs/src/favicon.ico",
+              "apps/rxjs/src/assets"
+            ],
+            "styles": [
+              "apps/rxjs/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -434,7 +478,10 @@
               "apps/rxjs/tsconfig.app.json",
               "apps/rxjs/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/rxjs/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/rxjs/**/*"
+            ]
           }
         },
         "test": {
@@ -467,8 +514,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/rxjs-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/rxjs-e2e/**/*"]
+            "tsConfig": [
+              "apps/rxjs-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/rxjs-e2e/**/*"
+            ]
           }
         }
       }
@@ -486,7 +538,10 @@
               "libs/components/tsconfig.lib.json",
               "libs/components/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/components/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/components/**/*"
+            ]
           }
         },
         "test": {
@@ -505,7 +560,7 @@
     }
   },
   "cli": {
-    "defaultCollection": "@nrwl/angular"
+    "defaultCollection": "@datorama/akita"
   },
   "schematics": {
     "@nrwl/workspace": {
