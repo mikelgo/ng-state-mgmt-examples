@@ -13,7 +13,7 @@ export class AppComponent extends BaseCrudComponent implements OnInit {
   public todos$: Observable<Todo[]>;
   public openTodos$: Observable<Todo[]>;
   public completedTodos$: Observable<Todo[]>;
-  constructor(private stateService: StateService ) {
+  constructor(public stateService: StateService ) {
     super(stateService);
   }
   ngOnInit() {
