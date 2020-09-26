@@ -39,6 +39,7 @@
     "@angular/router": "^10.0.0",
     "@datorama/akita": "^5.2.4",
     "@datorama/akita-ng-entity-service": "^5.0.0",
+    "@ngrx/store": "^10.0.0",
     "@ngxs/store": "^3.7.0",
     "@nrwl/angular": "10.2.1",
     "rxjs": "~6.5.5",
