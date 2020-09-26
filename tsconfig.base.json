@@ -15,7 +15,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ng-state-mgmt-examples/components": ["libs/components/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

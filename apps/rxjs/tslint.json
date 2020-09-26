@@ -1,0 +1,20 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "ngStateMgmtExamples",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "ng-state-mgmt-examples",
+      "kebab-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": ["!**/*"]
+  }
+}

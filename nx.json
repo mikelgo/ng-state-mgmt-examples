@@ -28,6 +28,30 @@
     "ngrx-e2e": {
       "tags": [],
       "implicitDependencies": ["ngrx"]
+    },
+    "ngxs": {
+      "tags": []
+    },
+    "ngxs-e2e": {
+      "tags": [],
+      "implicitDependencies": ["ngxs"]
+    },
+    "akita": {
+      "tags": []
+    },
+    "akita-e2e": {
+      "tags": [],
+      "implicitDependencies": ["akita"]
+    },
+    "rxjs": {
+      "tags": []
+    },
+    "rxjs-e2e": {
+      "tags": [],
+      "implicitDependencies": ["rxjs"]
+    },
+    "components": {
+      "tags": []
     }
   }
 }
