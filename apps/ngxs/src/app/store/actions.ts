@@ -14,3 +14,8 @@ export class RemoveTodo {
   static readonly type = '[Todo] Remove todo';
   constructor(public todo: Todo) {}
 }
+
+export class InitState {
+  static readonly type = '[Todo] Init todo state';
+  constructor(public todos: Todo[]) {}
+}
