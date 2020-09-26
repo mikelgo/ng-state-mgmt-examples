@@ -1,6 +1,13 @@
-<div (click)="onSelect()">{{ item.task }}</div>
-<div>
-  complete
-  <input type="checkbox" [checked]="item.completed" [value]="item.completed" (click)="onComplete()" />
+<div (click)="onSelect()" class="item">{{ item.task }}</div>
+<div class="actions">
+  <div class="i-complete">
+    complete
+    <input
+      type="checkbox"
+      [checked]="item.completed"
+      [value]="item.completed"
+      (click)="onComplete()"
+    />
+  </div>
+  <div (click)="onDelete()" class="i-delete">delete X</div>
 </div>
-<div (click)="onDelete()">delete X</div>

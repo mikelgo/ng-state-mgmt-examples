@@ -1,7 +1,24 @@
-:host{
-  display: inline-flex;
+:host {
+  display: flex;
   padding: 8px 16px;
   background-color: #eee;
   color: black;
-  justify-content: space-between;
+  //justify-content: flex-start;
+  //align-items: center;
+  transition: 225ms;
+}
+
+.actions{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+
+}
+.i-complete {
+  padding: 0px 8px;
+}
+.item{
+  width: 60%;
 }
