@@ -7,6 +7,8 @@ import {
 import { Store } from '@ngrx/store';
 import { TodoNgrxState } from './store/todo.reducer';
 import { add, complete, remove } from './store/actions';
+import { tap } from 'rxjs/operators';
+import { selectClosed, selectOpen, selectTodos } from './store/todo.selectors';
 
 @Injectable({
   providedIn: 'root',
@@ -29,15 +31,9 @@ export class StateService extends BaseStateService {
     private store: Store<TodoNgrxState>
   ) {
     super();
-    this.open$ = this.store.select((s) => {
-      if (s.todos) {
-        return s.todos.filter((e) => !e.completed);
-      }
-    });
-    this.completed$ = this.store.select((s) => {
-      if (s.todos) {
-        return s.todos.filter((e) => e.completed);
-      }
-    });
+    this.todos$ = this.store.select(selectTodos);
+    this.todos$.subscribe(console.log)
+    this.open$ = this.store.select(selectOpen)
+    this.completed$= this.store.select(selectClosed)
   }
 }

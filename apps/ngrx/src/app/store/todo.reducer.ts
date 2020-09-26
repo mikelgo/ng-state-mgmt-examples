@@ -7,7 +7,9 @@ export interface TodoNgrxState {
   todos: Todo[];
 }
 export const initialState: TodoNgrxState = {
-  todos: [],
+  todos: [
+    {id: '', completed: true, task: 'adsf'}
+  ],
 };
 
 const todoReducer = createReducer(

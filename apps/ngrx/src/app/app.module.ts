@@ -8,7 +8,7 @@ import { reducer } from './store/todo.reducer';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, SharedModule, StoreModule.forRoot({ todo: reducer})],
+  imports: [BrowserModule, SharedModule, StoreModule.forRoot({ todos: reducer})],
   providers: [],
   bootstrap: [AppComponent],
 })
