@@ -1,7 +1,7 @@
 import { Action, createReducer, on } from '@ngrx/store';
 
 import { Todo } from '../../../../../libs/shared/src/lib/models';
-import { add, complete, remove } from './actions';
+import { add, complete, initSuccess, remove } from './actions';
 
 export interface TodoNgrxState {
   todos: Todo[];
@@ -16,11 +16,11 @@ const todoReducer = createReducer(
   initialState,
   on(add, (state, payload) => ({
     ...state,
-    todos: [...state.todos, payload],
+    todos: [...state.todos, payload.item],
   })),
   on(remove, (state, payload) => {
     const currrentState = [...state.todos];
-    const indexToRemove = currrentState.indexOf(payload);
+    const indexToRemove = currrentState.indexOf(payload.item);
     currrentState.splice(indexToRemove, 1);
     return {
       ...state,
@@ -30,7 +30,7 @@ const todoReducer = createReducer(
   on(complete, (state, payload) => {
     const currrentState = [...state.todos];
     currrentState.forEach((i) => {
-      if (i.id === payload.id) {
+      if (i.id === payload.item.id) {
         i.completed = !i.completed;
       }
     });
@@ -38,7 +38,13 @@ const todoReducer = createReducer(
       ...state,
       todos: [...currrentState],
     };
-  })
+  }),
+  on(initSuccess, (state, payload) => {
+    return {
+      ...state,
+      todos: [...payload.todos],
+    };
+  }),
 );
 
 export function reducer(state: TodoNgrxState | undefined, action: Action) {
